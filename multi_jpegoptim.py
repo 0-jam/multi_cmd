@@ -20,7 +20,9 @@ def main():
 
     images = find_files(args.input, IMG_EXTS)
 
-    with mp.Pool(args.jobs) as pool:
+    jobs = min([len(images), args.jobs])
+
+    with mp.Pool(jobs) as pool:
         pool.map(run_optim, images)
 
 
