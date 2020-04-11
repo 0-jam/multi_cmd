@@ -8,4 +8,4 @@ def find_files(target_dir, exts):
     for ext in exts:
         file_paths += [f for f in target_path.rglob('*' + ext)]
 
-    return file_paths
+    return [file_path.resolve() for file_path in file_paths]
