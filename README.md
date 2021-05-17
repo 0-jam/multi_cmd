@@ -12,8 +12,9 @@ Execute identical command to the specified directory (multi-threaded)
 
 ## Environment
 
-- Arch Linux x86_64 (2019/10/24)
-- Python 3.7.4
+- Arch Linux x86_64
+- Windows 10 x86_64
+- Python 3.9
 - jpegoptim 1.4.6
 - OptiPNG 0.7.7
 
